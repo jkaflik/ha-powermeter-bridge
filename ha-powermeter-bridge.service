@@ -1,0 +1,10 @@
+[Unit]
+Description=HA powermeter bridge
+
+[Service]
+ExecStart=/usr/bin/ha-powermeter-bridge
+WorkingDirectory=/etc/ha-powermeter-bridge
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
